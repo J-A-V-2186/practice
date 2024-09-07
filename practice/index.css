@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+::selection {
+  background-color: white;
+  color: black;
+}
+/* Basic styling for the to-do list */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  padding: 8px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  margin-bottom: 24px;
+  font-size: xx-large;
+}
+.div-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+#taskInput {
+  margin-right: 10px;
+  border-radius: 50px;
+  color: black;
+  border: none;
+}
+#taskInput[type="text"] {
+  border: 1px solid #ffffff; /* Default border */
+  padding: 5px;
+  outline: none; /* Remove the default blue outline */
+  transition: all 0.5s ease;
+}
+#taskInput[type="text"]::placeholder {
+  color: black;
+}
+button {
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+button:active {
+  transform: scale(0.93);
+}
+.task {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.5 ease;
+  background-color: rgb(216, 216, 216);
+  height: relative;
+  width: 500px;
+  padding: 10px;
+}
+h2 {
+  color: black;
+  margin-bottom: 24px;
+}
+#taskList {
+  text-align: start;
+}
+
+.task-item {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.remove-btn {
+  margin-left: 10px;
+  cursor: pointer;
+}
